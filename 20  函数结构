@@ -1,0 +1,26 @@
+def getSize(length):
+    perimeter=4*length
+    area=length*length
+    return perimeter,area
+
+print(getSize(6)) 
+print(getSize(8)) 
+def getVolume(lenght,width,height):
+    volume=lenght*width*height
+    return(volume)
+print(getVolume(4,5,6))
+print(getVolume(7,8,9))
+def getBMI(height,weight):
+    BMI = weight/(height*height)
+    return BMI
+print(getBMI(1.83,60))
+print(getBMI(1.60,50))
+def getArea(R):
+    area=3.14*(R*R)
+    return area
+bigSize=getArea(6)
+smallSize=getArea(3)
+if bigSize>2*smallSize:
+    print("不吃了")
+else:
+    print("可以换")
