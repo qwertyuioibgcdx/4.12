@@ -1,0 +1,48 @@
+# 4.12
+def getNumber(number):
+    # 空列表numberList
+    numberList=[]
+    # for循环遍历range()生成1到number+1的数
+    for i in range(1,number+1):
+        # if判断数字的余数是否为1
+        if i%2==1:
+            # 使用append()追加到列表numberList中
+            numberList.append(i)
+    # 返回列表numberList
+    return numberList
+
+# 调用函数getNumber(),传入参数20并输出结果
+
+print(getNumber(20))
+# 定义函数getNumber，参数为number
+def getNumber(number):
+    # 空列表numberList
+    numberList=[]
+    # for循环遍历range()生成1到number+1的数
+    for i in range(1,number+1):
+        # if判断数字的余数是否为1
+        if i%2==1:
+            # 使用append()追加到列表numberList中
+            numberList.append(i)
+    # 返回列表numberList
+    return numberList
+
+# 调用函数getNumber(),传入参数20并输出结果
+
+print(getNumber(20))
+# 定义函数getDuration()，sleep和getUp参数
+def getDuration(sleep,getUp):
+    # 计算睡觉时间
+    time=24-sleep+getUp
+    # 返回time
+    return time 
+
+# 定义timePoint列表
+timePoint= [24, 23, 24, 22, 24, 24, 24]
+
+# 遍历列表中的元素
+for i in timePoint:
+    # 将元素传入函数中，并将计算结果赋值给sleepDuration
+    sleepDuration=getDuration(i,7)
+    # print()输出sleepDuration
+    print(sleepDuration)
